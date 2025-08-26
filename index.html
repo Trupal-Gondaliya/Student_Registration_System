@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS -->
+    <script src="index.js" defer></script>
+
+    <title>Student Registration System</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body class="bg-gradient-to-r from-[#5152ae] to-[#d5d7d9] min-h-screen flex items-center justify-center">
+    <section
+        class="rounded-xl shadow-[0px_0px_40px_white] p-6 flex flex-col md:flex-row gap-8 my-6 mx-4 w-full max-w-6xl bg-white">
+
+        <!-- Main Header & Form -->
+        <main class="md:w-1/2 w-full">
+            <header class="mb-6">
+                <h1 class="text-3xl font-bold text-[#5152ae] text-center drop-shadow-sm">
+                    Student Registration System
+                </h1>
+            </header>
+            <!-- Form -->
+            <form class="space-y-4" id="registration-Form">
+                <div>
+                    <label class="block font-medium text-gray-700">Name</label>
+                    <input type="text" placeholder="Name" name="name" id="name"
+                        class="w-full p-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+                </div>
+
+                <div>
+                    <label class="block font-medium text-gray-700">Student ID</label>
+                    <input type="number" placeholder="ID" name="studentID" id="studentID"
+                        class="w-full p-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+                </div>
+
+                <div>
+                    <label class="block font-medium text-gray-700">Email ID</label>
+                    <input type="email" placeholder="Email" name="email" id="emailID"
+                        class="w-full p-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+                </div>
+
+                <div>
+                    <label class="block font-medium text-gray-700">Contact No</label>
+                    <input type="number" placeholder="Contact No" name="contactNo" id="contactNo"
+                        class="w-full p-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+                </div>
+
+                <div>
+                    <label class="block font-medium text-gray-700">Standard</label>
+                    <select name="standard" id="standard"
+                        class="w-full p-2 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                        <option value="">Select Standard</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <button
+                    class="w-full bg-[#5152ae] hover:bg-[#3e3f9e] p-2 text-white rounded-lg font-medium transition duration-200"
+                    type="submit">Add</button>
+            </form>
+        </main>
+
+        <!-- View Details Section -->
+        <aside class="md:w-1/2 w-full">
+            <h3 class="text-xl font-semibold text-gray-700 text-center mb-4">
+                View Details
+                <i class="fa-solid fa-caret-down details-Btn hover:text-[#5152ae] text-2xl cursor-pointer"></i>
+            </h3>
+            <section id="studentImg" class="flex justify-center items-center h-full">
+                <img src="Student_Registration.png" alt="Student Registration"
+                    class="max-w-xs w-full" />
+            </section>
+
+            <section id="details" class="p-4"></section>
+        </aside>
+    </section>
+</body>
+
+</html>
